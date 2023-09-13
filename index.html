@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching ML</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="title-section">
+        <h1>Teaching ML</h1>
+    </div>
+    <div class="container">
+        <div class="content" id="content">
+            <!-- Main content goes here -->
+            <section id="section1">
+                <h2>Section 1</h2>
+                <p>Content of Section 1</p>
+            </section>
+            <section id="section2">
+                <h2>Section 2</h2>
+                <p>Content of Section 2</p>
+            </section>
+            <section id="section3">
+                <h2>Section 3</h2>
+                <p>Content of Section 3</p>
+            </section>
+            <!-- Add more sections and subsections as needed -->
+        </div>
+        <div class="sidebar">
+            <!-- Sidebar content goes here (table of contents, links, etc.) -->
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <!-- Add more sections and subsections as needed -->
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $("#content").resizable({
+                handles: "w", // Allow resizing from the left edge
+                minWidth: 200, // Set the minimum width for the content
+            });
+        });
+    </script>
+</body>
+</html>
