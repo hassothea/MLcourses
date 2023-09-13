@@ -20,38 +20,20 @@ body {
     overflow: hidden;
 }
 
-/* Content Section */
-.content {
-    flex: 1;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    overflow: auto;
-}
-
-/* Resizable Divider */
-.content {
-    resize: horizontal;
-    overflow: auto;
-}
-
 /* Left Sidebar */
 .sidebar {
     width: 15%;
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    resize: horizontal; /* Allow resizing from the right edge */
+    overflow: auto;
 }
 
-/* Remove the default jQuery UI styles */
-.ui-resizable-handle {
-    background: none;
-    border: none;
-    width: 10px;
-    cursor: col-resize;
-}
-
-/* Style for the resizable handle */
-.ui-resizable-w {
-    background-color: #ccc;
+/* Content Section */
+.content {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }

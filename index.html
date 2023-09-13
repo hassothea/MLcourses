@@ -13,6 +13,16 @@
         <h1>Teaching ML</h1>
     </div>
     <div class="container">
+        <div class="sidebar" id="sidebar">
+            <!-- Sidebar content goes here (table of contents, links, etc.) -->
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <!-- Add more sections and subsections as needed -->
+            </ul>
+        </div>
         <div class="content" id="content">
             <!-- Main content goes here -->
             <section id="section1">
@@ -29,22 +39,20 @@
             </section>
             <!-- Add more sections and subsections as needed -->
         </div>
-        <div class="sidebar">
-            <!-- Sidebar content goes here (table of contents, links, etc.) -->
-            <h2>Contents</h2>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <!-- Add more sections and subsections as needed -->
-            </ul>
-        </div>
     </div>
     <script>
         $(function() {
-            $("#content").resizable({
-                handles: "w", // Allow resizing from the left edge
-                minWidth: 200, // Set the minimum width for the content
+            $("#sidebar").resizable({
+                handles: "e", // Allow resizing from the right edge
+                minWidth: 200, // Set the minimum width for the sidebar
+                maxWidth: 700, // Set the maximum width for the sidebar
+                resize: function(event, ui) {
+                    // Adjust the width of the content panel
+                    var sidebarWidth = ui.size.width;
+                    var containerWidth = $(".container").width();
+                    var contentWidth = containerWidth - sidebarWidth;
+                    $("#content").width(contentWidth);
+                }
             });
         });
     </script>
