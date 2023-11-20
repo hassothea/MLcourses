@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#សកខមសនបបមនករណន-supervised-learning" id="toc-សកខមសនបបមនករណន-supervised-learning" class="nav-link" data-scroll-target="#សកខមសនបបមនករណន-supervised-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបមានការណែនាំ (Supervised learning)</a></li>
   <li><a href="#សកខមសនបបគមនករណន-unsupervised-learning" id="toc-សកខមសនបបគមនករណន-unsupervised-learning" class="nav-link" data-scroll-target="#សកខមសនបបគមនករណន-unsupervised-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបគ្មានការណែនាំ (Unsupervised learning)</a></li>
-  <li><a href="#សកខមសនបបមនករលតដ-reinforcement-learning" id="toc-សកខមសនបបមនករលតដ-reinforcement-learning" class="nav-link" data-scroll-target="#សកខមសនបបមនករលតដ-reinforcement-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបពង្រឹងឡើងវិញ (Reinforcement learning)</a></li>
+  <li><a href="#សកខមសនបបពងរងឡងវញ-reinforcement-learning" id="toc-សកខមសនបបពងរងឡងវញ-reinforcement-learning" class="nav-link" data-scroll-target="#សកខមសនបបពងរងឡងវញ-reinforcement-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបពង្រឹងឡើងវិញ (Reinforcement learning)</a></li>
   </ul></li>
   <li><a href="#ឯកសរសមរបសវងយលបនថម" id="toc-ឯកសរសមរបសវងយលបនថម" class="nav-link" data-scroll-target="#ឯកសរសមរបសវងយលបនថម">📚 ឯកសារសម្រាប់ស្វែងយល់បន្ថែម</a></li>
   </ul>
@@ -111,44 +111,44 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <p>ដើម្បីងាយស្រួលស្វែងយល់អំពីសិក្ខាម៉ាសុីនយើងគួរស្គាល់ពាក្យគន្លឹះមួយចំនួនខាងក្រោមជាមុនសិន៖</p>
 <ul>
-<li><p>ទិន្នន័យ (Data): ជាបេះដូងនៃសិក្ខាម៉ាសុីនហើយជាទូទៅយើងចែកទិន្នន័យជាផ្នែក input <span class="math inline">\(x\)</span> (ទិន្នន័យដែលជាធាតុដើមសម្រាប់បម្លែងទៅជាលទ្ធផលនៃប្រតិបត្តិការណ៍) និង output ឬ target <span class="math inline">\(y\)</span> ដែលជាលទ្ធផលឬ ជាអថេរដែលយើងចង់ប៉ាន់ស្មានដោយប្រើប្រាស់ <span class="math inline">\(x\)</span> ។</p></li>
-<li><p>លំនាំគម្រូឬ ម៉ូដែល (Model): ជាវិធិសាស្រ្តឬ ជាអនុគមន៍ <span class="math inline">\(f\)</span> ដែលបម្លែងពី input <span class="math inline">\(x\)</span> ទៅជាការព្យាករណ៍នៃ output <span class="math inline">\(y\)</span> ដែលមានន័យថា៖ <span class="math inline">\(f(x)\approx y\)</span> ។</p></li>
-<li><p>រង្វាស់នៃកំហុសឬ ពិន្ទុ (Loss ឬ score): ជារង្វាស់ដែលប្រើដើម្បីវាយតម្លៃគុណភាពនៃម៉ូដែល។ កំហុសឬ ពិន្ទុជាអនុមន៍នៃម៉ូដែលហើយវាអាស្រ័យនឹងទិន្នន័យដែលយើងមាន។ ម៉ូដែលដែលល្អសម្រាប់កិច្ចការមួយគឺជាម៉ូដែលដែលបង្កើតកំហុសតិចឬ មានពិន្ទុច្រើនក្នុងប្រតិបត្តិការណ៍នោះ។</p></li>
-<li><p>វិធីសាស្រ្តបរមាកម្ម (Optimization algorithm): ជាវិធីសាស្រ្តដែលយើងអាចប្រើដើម្បីស្វែងរកម៉ូដែលដែលល្អសម្រាប់ប្រតិបត្តិការណ៍មួយ។ ដោយសារម៉ូដែលដែលល្អជាម៉ូដែលដែលផ្តល់កំហុសតិចឬ មានពិន្ទុច្រើន នោះការស្វែងរកម៉ូដែលដែលសមស្របគឺជាការធ្វើបរមាកម្មលើអនុគមន៍នៃកំហុសឬ ពិន្ទុ ធៀបនឹងម៉ូដែល។</p></li>
+<li><p>ទិន្នន័យ (Data): ជាបេះដូងនៃសិក្ខាម៉ាសុីនហើយជាទូទៅយើងចែកទិន្នន័យជាផ្នែក input <span class="math inline">\(x\)</span> (ទិន្នន័យដែលជាធាតុដើមសម្រាប់បម្លែងទៅជាលទ្ធផលនៃប្រតិបត្តិការ) និង output ឬ target <span class="math inline">\(y\)</span> ដែលជាលទ្ធផលឬ ជាអថេរដែលយើងចង់ប៉ាន់ស្មានដោយប្រើប្រាស់ input <span class="math inline">\(x\)</span> ។</p></li>
+<li><p>លំនាំគម្រូឬ ម៉ូដែល (Model): ជាវិធីសាស្រ្តឬ ជាអនុគមន៍ <span class="math inline">\(f\)</span> ដែលបម្លែងពី input <span class="math inline">\(x\)</span> ទៅជាការព្យាករណ៍នៃ output <span class="math inline">\(y\)</span> ដែលមានន័យថា៖ <span class="math inline">\(f(x)\approx y\)</span> ។</p></li>
+<li><p>រង្វាស់នៃកំហុសឬ ពិន្ទុ (Loss ឬ score): ជារង្វាស់ដែលប្រើដើម្បីវាយតម្លៃគុណភាពនៃម៉ូដែល។ កំហុសឬ ពិន្ទុជាអនុមន៍នៃម៉ូដែលហើយវាអាស្រ័យនឹងទិន្នន័យដែលយើងមាន។ ម៉ូដែលដែលល្អសម្រាប់កិច្ចការមួយគឺជាម៉ូដែលដែលបង្កើតកំហុសតិចឬ មានពិន្ទុច្រើនក្នុងប្រតិបត្តិការនោះ។</p></li>
+<li><p>វិធីសាស្រ្តបរមាកម្ម (Optimization algorithm): ជាវិធីសាស្រ្តដែលយើងអាចប្រើដើម្បីស្វែងរកម៉ូដែលដែលល្អសម្រាប់ប្រតិបត្តការណ៍មួយ។ ដោយសារម៉ូដែលដែលល្អជាម៉ូដែលដែលផ្តល់កំហុសតិចឬ មានពិន្ទុច្រើន នោះការស្វែងរកម៉ូដែលដែលសមស្របគឺជាការធ្វើបរិមាកម្មលើអនុគមន៍នៃកំហុសឬ ពិន្ទុ ធៀបនឹងម៉ូដែល។</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./figures/ml_ingredient.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">រូបទី១. Input អាចប្រដូចនឹងគ្រឿងផ្សំមុខម្ហូបហើយ ម៉ូដែលអាចប្រដូចនឹងវិធីចំអិនម្អូប ចំណែកម្ហូបដែលចំអិនបានអាចប្រដូចទៅនឹង ​output នៃម៉ូដែល។​ រង្វាស់នៃកំហុសដែលបានពីការប្រៀបធៀបអ្វីដែលឲ្យដោយម៉ូដែលទៅនឹង ouptut ពិតប្រាកដ ជួយឲ្យម៉ូដែលអាចរៀនក្នងការធ្វើប្រតិបត្តិការណ៍ឲ្យបានប្រសើរ។</figcaption>
+<figcaption class="figure-caption">រូបទី១. Input អាចប្រដូចនឹងគ្រឿងផ្សំមុខម្ហូបហើយ ម៉ូដែលអាចប្រដូចនឹងវិធីចំអិនម្អូប ចំណែកម្ហូបដែលចំអិនបានអាចប្រដូចទៅនឹង ​output នៃម៉ូដែល។​ រង្វាស់នៃកំហុសដែលបានពីការប្រៀបធៀបអ្វីដែលឲ្យដោយម៉ូដែលទៅនឹង ouptut ពិតប្រាកដ ជួយឲ្យម៉ូដែលអាចរៀនក្នងការធ្វើប្រតិបត្តិការឲ្យបានប្រសើរ។</figcaption>
 </figure>
 </div>
-<p>បើយើងមានទិន្នន័យសម្រាប់បង្វឹកម៉ូដែល (Traingn data) <span class="math inline">\({\cal T}=\{(x_1,y_1),...,(x_n,y_n)\}\)</span> ដែលបើប្រដូចនឹងរូបទី១ខាងលើគឺ input <span class="math inline">\(x_i\)</span> ដូចជាគ្រឿងផ្សំសម្រាប់ចម្អិនម្ហូប <span class="math inline">\(y_i\)</span> (output) ។ យើងអាចប្រើទិន្នន័យនេះទៅបង្វឹកម៉ូដែលដែលអាចបម្លែងគ្រឿងផ្សំ <span class="math inline">\(x\)</span> ណាមួយថ្មីឲ្យទៅជាម្ហូប <span class="math inline">\(y\)</span> ណាមួយដោយរៀនតាមទិន្នន័យដែលមានក្នុង <span class="math inline">\(\cal T\)</span> ។</p>
-<p>មកដល់ត្រឹមនេះអ្វីៗនៅមិនទាន់ច្បាស់លាស់នៅឡើយទេដោយសារមានបញ្ហាជាច្រើនដែលយើងមិនទាន់បានបង្ហាញឲ្យច្បាស់ដូចជា៖</p>
+<p>បើយើងមានទិន្នន័យសម្រាប់បង្វឹកម៉ូដែល (Traingn data) <span class="math inline">\({\cal T}=\{(x_1,y_1),...,(x_n,y_n)\}\)</span> ដែលប្រដូចនឹងរូបទី១ខាងលើគឺ input <span class="math inline">\(x_i\)</span> ដូចជាគ្រឿងផ្សំសម្រាប់ចម្អិនម្ហូប <span class="math inline">\(y_i\)</span> (output) ។ យើងអាចប្រើទិន្នន័យនេះទៅបង្វឹកម៉ូដែលដែលអាចបម្លែងគ្រឿងផ្សំ <span class="math inline">\(x\)</span> ថ្មីណាមួយឲ្យទៅជាម្ហូប <span class="math inline">\(y\)</span> ណាមួយដោយរៀនតាមទិន្នន័យដែលមានក្នុង <span class="math inline">\(\cal T\)</span> ។</p>
+<p>មកដល់ត្រឹមនេះអ្វីៗនៅមិនទាន់ច្បាស់លាស់នៅឡើងទេដោយសារមានបញ្ហាជាច្រើនដែលយើងមិនទាន់បានបង្ហាញឲ្យច្បាស់ដូចជា៖</p>
 <ul>
 <li><p>តើគូ input-output <span class="math inline">\((x_i,y_i)\)</span> នីមួយៗត្រូវតាងឬ បញ្ចូលទៅក្នុងម៉ូដែលដោយរបៀបណា?</p></li>
-<li><p>តើម៉ូដែលមានរូបមន្តបែបណា? ធកវើយ៉ាងណាទើបជ្រើសរើសបានម៉ូដែលដែលល្អ?</p></li>
+<li><p>តើម៉ូដែលមានរូបមន្តបែបណា? តើយើងធ្វើបែបណាទើបអាចជ្រើសបានម៉ូដែលដែលល្អ?</p></li>
 <li><p>តើម៉ូដែលអាចរៀនពីទិន្នន័យដោយរបៀបណា?</p></li>
 </ul>
-<p>ចម្លើយនៃសំនួរទាំងនេះនឹងត្រូវបានបកស្រាដោយលំអិតជាបណ្តើរៗនៅផ្នែកបន្តរបន្ទាប់ទៀត ប៉ុន្តែអ្វីដែលសំខាន់បំផុតក្នុងផ្នែកនេះគឺ ការស្គាល់ជាដំបូងពីដំណើរការនៃធាតុសំខាន់ៗរបស់សិក្ខាម៉ាសុីនដែលបានរៀបរាប់ខាងលើឲ្យបានច្បាស់លាស់ជាមុនសិន។ គំនូរជីវចលខាងក្រោមនឹងសង្ខេបពីដំណើរការជាទូទៅនៃសិក្ខាម៉ាសុីន។</p>
+<p>ចម្លើយនៃសំនួរទាំងនេះនឹងត្រូវបានបកស្រាដោយលំអិតជាបណ្តើរៗនៅផ្នែកបន្តរបន្ទាប់ទៀត ប៉ុន្តែអ្វីដែលសំខាន់បំផុតក្នុងផ្នែកនេះគឺ ការស្គាល់ជាដំបូងពីដំណើរការនៃធាតុសំខាន់ៗរបស់សិក្ខាម៉ាសុីនដែលបានរៀបរាប់ខាងលើឲ្យបានច្បាស់លាស់ជាមុនសិន។ គំនូរជីវចលខាងក្រោមសង្ខេបពីដំណើរការជាទូទៅនៃសិក្ខាម៉ាសុីន។</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./figures/MLElements.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">រូបទី២: ដំណើរការជាទូទៅនៃសិក្ខាម៉ាសុីន។</figcaption>
+<figcaption class="figure-caption">រូបទី២: ដំណើរការទូទៅនៃសិក្ខាម៉ាសុីន។</figcaption>
 </figure>
 </div>
 <hr>
 </section>
 <section id="ករសរសរកមមវធធមមតនង-សកខមសន" class="level2">
-<h2 class="anchored" data-anchor-id="ករសរសរកមមវធធមមតនង-សកខមសន">🤓 ការសរសេរកម្មវិធីធម្មតានិង សិក្ខាម៉ាសុីន</h2>
+<h2 class="anchored" data-anchor-id="ករសរសរកមមវធធមមតនង-សកខមសន">⚖️ ការសរសេរកម្មវិធីធម្មតានិង សិក្ខាម៉ាសុីន</h2>
 <p>ក្នុងការសរសេរកម្មវិធីធម្មតាឬ Traditional programming មនុស្សជាអ្នកសង្កេតពីចំណោទបញ្ហានិង ស្វែងរកដំណោះស្រាយដោយបង្កើតបានជា <strong>កម្មវិធី</strong> ដែលជារូបមន្តសម្រាប់បម្លែងពី input ទៅជា output ។</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://insightsoftware.com/blog/machine-learning-vs-traditional-programming/"><img src="./figures/compare_ML_program.png" class="img-fluid figure-img" style="width:90.0%"></a></p>
+<p><a href="https://insightsoftware.com/blog/machine-learning-vs-traditional-programming/"><img src="./figures/compare_ML_program.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
 <figcaption class="figure-caption">រូបទី៣: ការប្រៀបធៀបរវាងការសរសេរកម្មវិធីបែបធម្មតាជាមួយនិងសិក្ខាម៉ាសុីន។</figcaption>
 </figure>
 </div>
 <p>ដោយឡែកក្នុងសិក្ខាម៉ាសុីន យើងមានម៉ូដែល ដែលប្រៀបដូចជាកម្មវិធីសម្រាប់បម្លែងពី input ទៅជា output រួចហើយ ប៉ុន្តែវានៅអាស្រ័យនិង ប៉ារ៉ាម៉ែត្រគន្លឹះជាច្រើនដែលត្រូវការកែរតម្រូវដើម្បីឲ្យវាអាចក្លាយជាម៉ូដែលដែលល្អមួយ នេះមានន័យថាយើងត្រូវផ្តល់ឲ្យម៉ូដែលទាំង input និង output ដើម្បីធ្វើបរមាកម្មនិង ស្វែងរកកម្រិតប្រសើរសមស្របមួយសម្រាប់ម៉ូដែលនៃសិក្ខាម៉ាសុីន។ ហេតុនេះជំនួសឲ្យការសង្កេតពីមនុស្ស ដើម្បីបង្កើតកម្មវិធីយើងផ្តល់ឲ្យម៉ូដែលនូវទិន្នន័យទាំង​ input និង output សម្រាប់ឲ្យវារៀននិង ឈានទៅដល់កម្រិតមួយដែលអាចយកទៅប្រើប្រាស់ជាកម្មវិធីសម្រេច។</p>
-<p>ឧទាហរណ៍៖ ជំនួសឲ្យការពិនិត្យរកភាពខុសប្លែកគ្នារវាង email ដែលជា spam និង មិនមែន spam យើងប្រើម៉ូដែលមួយដែលព្យាករណ៍ប្រភេទ email តាមរយៈការប្រៀបធៀប email នោះទៅនឹង email ទាំងអស់ដែលយើងមាន ហើយពិនិត្យមើលតែ email ចំនួន ១០ ដែលស្រដៀងនឹងវាបំផុត។ បើក្នុងចំណោម email ទាំង ១០ នោះសំបូរដោយ email ជា spam ច្រើនជាង email ដែលមិនមែនជា spam នោះយើងអាចសន្មត់ថា email ថ្មីនោះក៏គួរតែជា spam ដែរ។ នេះជាលំនាំមួយនៃម៉ូដែលសិក្ខាម៉ាសុីនដែលគេស្គាល់ថាជាម៉ូដែល <span class="math inline">\(K\)</span>-nearest neighbors (អ្នកនៅក្បែរជាងគេចំនួន K នាក់) ។ បញ្ហាដែលគួរចោទសួរក្នុងករណីនេះគឺថាតើហេតុអ្វីយើងពិនិត្យមើលតែ email ចំនួន ១០ ដែលស្រដៀងនឹង email ថ្មីនោះ? ជាទូទៅ ការស្វែងរកតម្លៃ K (ចំនួន email ដែលត្រូវយកទៅកំណត់ប្រភេទនៃ email ថ្មី) គឺជាបញ្ហាបរមាកម្មដែលយើងត្រូវកំណត់រក ធ្វើយ៉ាងណាឲ្យលំនាំនៃការព្យាករណ៍តាមវិធីប្រៀបធៀបខាងលើនេះមានសមត្ថភាពដំណើរការបានល្អជាទូទៅនៅលើទិន្នន័យដែលយើងមាន។ ចំពោះថាតើយើងធ្វើបរមាកម្មដើម្បីស្វែងរក <span class="math inline">\(K\)</span> ដែលល្អបំផុតដោយរបៀបណា យើងនឹងបានឃើញនៅមេរៀនក្រោយៗទៀតដែលនិយាយអំពីការជ្រើសរើសម៉ូដែលសមស្រប តែក្នុងឧទាហរណ៍នេះ យើងគ្រាន់តែចង់បង្ហាញពីលំនាំនៃការព្យាករណ៍ប្រភេទ email មួយបែបតាមវិធីសាស្រ្តសិក្ខាម៉ាសុីនប៉ុណ្ណោះ។</p>
+<p>ឧទាហរណ៍៖ ជំនួសឲ្យការពិនិត្យរកភាពខុសប្លែកគ្នារវាង email ដែលជា spam និង មិនមែន spam យើងប្រើម៉ូដែលមួយដែលព្យាករណ៍ប្រភេទ email តាមរយៈការប្រៀបធៀប email នោះទៅនឹង email ទាំងអស់ដែលយើងមាន ហើយពិនិត្យមើលតែ email ចំនួន ១០ ដែលស្រដៀងនឹងវាបំផុត។ បើក្នុងចំណោម email ទាំង ១០ នោះសំបូរដោយ email ជា spam ច្រើនជាង email ដែលមិនមែនជា spam នោះយើងអាចសន្មត់ថា email ថ្មីនោះក៏គួរតែជា spam ដែរ។ នេះជាលំនាំមួយនៃម៉ូដែលសិក្ខាម៉ាសុីនដែលគេស្គាល់ថាជាម៉ូដែល -Nearest Neighbors ឬ <span class="math inline">\(K\)</span>NN (អ្នកនៅក្បែរជាងគេចំនួន <span class="math inline">\(K\)</span> នាក់) ។ បញ្ហាដែលគួរចោទសួរក្នុងករណីនេះគឺថាតើហេតុអ្វីយើងពិនិត្យមើលតែ email ចំនួន ១០ ដែលស្រដៀងនឹង email ថ្មីនោះ? ជាទូទៅ ការស្វែងរកតម្លៃ <span class="math inline">\(K\)</span> (ចំនួន email ដែលត្រូវយកទៅកំណត់ប្រភេទនៃ email ថ្មី) គឺជាបញ្ហាបរមាកម្មដែលយើងត្រូវកំណត់រកធ្វើយ៉ាងណាឲ្យលំនាំនៃការព្យាករណ៍តាមវិធីប្រៀបធៀបខាងលើនេះមានសមត្ថភាពដំណើរការបានល្អជាទូទៅនៅលើទិន្នន័យដែលយើងមាន។ ចំពោះថាតើយើងធ្វើបរមាកម្មដើម្បីស្វែងរក ដែលល្អបំផុតដោយរបៀបណា យើងនឹងបានឃើញនៅមេរៀនក្រោយៗទៀតដែលនិយាយអំពីការជ្រើសរើសម៉ូដែលសមស្រប តែក្នុងឧទាហរណ៍នេះ យើងគ្រាន់តែចង់បង្ហាញពីលំនាំនៃការព្យាករណ៍ប្រភេទ email មួយបែបតាមវិធីសាស្រ្តសិក្ខាម៉ាសុីនប៉ុណ្ណោះ។</p>
 </section>
 <section id="ផនកសខនៗនសកខមសន" class="level2">
 <h2 class="anchored" data-anchor-id="ផនកសខនៗនសកខមសន">🤓 ផ្នែកសំខាន់ៗនៃសិក្ខាម៉ាសុីន</h2>
@@ -161,21 +161,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="សកខមសនបបមនករណន-supervised-learning" class="level3">
 <h3 class="anchored" data-anchor-id="សកខមសនបបមនករណន-supervised-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបមានការណែនាំ (Supervised learning)</h3>
-<p>ការរៀបរាប់ពីសិក្ខាម៉ាសុីនខាងលើគឺមានទម្រង់<strong>បែបមានការណែនាំ</strong> ពីព្រោះយើងមាន input ហើយនិង output ។ ជាទូទៅ សិក្ខាម៉ាសុីនបែបមានការណែនាំឬ Supervised Machine Learning មានទម្រង់ជាការប្រើប្រាស់ input ទៅព្យាករណ៍ឬ ប៉ាន់ប្រមាណតម្លៃនៃ output តាមរយៈម៉ូដែល។ ពាក្យថា <strong>ណែនាំ</strong> (supervised) នៅទីនេះសំដៅដល់ការដែលការព្យាករណ៍នៃម៉ូដែល (និយមតាងដោយ <span class="math inline">\(\hat{y}\)</span>) អាចយកទៅធៀបនឹងតម្លៃ output ពិតប្រាកដ <span class="math inline">\(y\)</span> ហើយយើងអាចប្រើកំហុសនៃការព្យាករណ៍នេះទៅពង្រឹងសមត្ថភាពនៃម៉ូដែលឬ និយាយឲ្យចំគឺយើងជ្រើសរើសម៉ូដែលដែលបង្កើតកំហុសតិចបំផុត។ ឧទាហរណ៍៖</p>
+<p>ការរៀបរាប់ពីសិក្ខាម៉ាសុីនខាងលើគឺមានទម្រង់<strong>បែបមានការណែនាំ</strong> ពីព្រោះយើងមាន input ហើយនិង output ។ ជាទូទៅ សិក្ខាម៉ាសុីនបែបមានការណែនាំ ឬ Supervised Machine Learning មានទម្រង់ជាការប្រើប្រាស់ input ទៅព្យាករណ៍ឬប៉ាន់ប្រមាណតម្លៃនៃ output តាមរយៈម៉ូដែល។ ពាក្យថា <strong>ណែនាំ</strong> (supervised) នៅទីនេះសំដៅដល់ការដែលការព្យាករណ៍នៃម៉ូដែល (និយមតាងដោយ <span class="math inline">\(\hat{y}\)</span> ) អាចយកទៅធៀបនឹងតម្លៃ output ពិតប្រាកដ ហើយយើងអាចប្រើកំហុសនៃការព្យាករណ៍នេះទៅពង្រឹងសមត្ថភាពនៃម៉ូដែលឬ និយាយឲ្យចំគឺយើងជ្រើសរើសម៉ូដែលដែលបង្កើតកំហុសតិចបំផុត។ ឧទាហរណ៍៖</p>
 <ul>
-<li><p>ការដាក់ថ្នាក់ email ថាជាប្រភេទ spam ឬ មិនមែន spam ដោយផ្អែកលើសំណេរក្នុង email នោះ។</p></li>
-<li><p>ការព្យាករណ៍តម្លៃទីផ្សារដោយប្រើប្រាស់តម្លៃសន្ទស្សន៍សេដ្ខកិច្ចផ្សេងៗដូចជា តម្លៃប្រេងឥន្ទនៈ តម្លៃអត្រាប្តូប្រាក់ ឬតម្លៃមាសជាដើម។</p></li>
-<li><p>ការព្យាករណ៍សីតុណ្ណភាពនៅថ្ងៃខាងមុខដោយប្រើប្រាស់ទិន្នន័យនៃចរន្តបរិយាកាសដែលមានខ្នាតធំ (large-scale flows) ដូចជាល្បឿនខ្យល់ជាដើម។</p></li>
+<li><p>ការបែងចែក email ថាជាប្រភេទ spam ឬ មិនមែន spam ដូចឧទាហរណ៍ដែលលើកឡើងក្នុងផ្នែកមុន។</p></li>
+<li><p>ការព្យាករណ៍តម្លៃទីផ្សារដោយប្រើប្រាស់តម្លៃសន្ទស្សន៍សេដ្ខកិច្ចផ្សេងៗដូចជា តម្លៃប្រេងឥន្ទនៈ តម្លៃអត្រាប្តូរប្រាក់ ឬតម្លៃមាសជាដើម។</p></li>
+<li><p>ការព្យាករណ៍សីតុណ្ណភាពនៅថ្ងៃខាងមុខដោយប្រើប្រាស់ទិន្នន័យនៃចរន្តបរិយាកាសដែលមានខ្នាតធំៗ (large-scale flows) ដូចជាល្បឿនខ្យល់ជាដើម។</p></li>
 </ul>
 <p>ជាទូទៅយើងអាចចែកសិក្ខាម៉ាសុីនបែបមានការណែនាំជាពីរប្រភេទគឺ៖</p>
 <ul>
-<li><p><strong>តម្រែតម្រង់តម្លៃ (regression)</strong>: ជាប្រតិបត្តិការណ៍ដែលតម្លៃ output ដែលត្រូវប៉ានស្មានជាចំនួនពិត (<span class="math inline">\(y\in\mathbb{R}\)</span>) ដូចជា តម្លៃទីផ្សារ សីតុណ្ណភាពឬ តម្លៃជាបរិមាណផ្សេងៗទៀត។</p></li>
-<li><p><strong>ការធ្វើចំណែកថ្នាក់បែបមានការណែនាំ (supervised classification)</strong>: ជាប្រតិបត្តិការណ៍ដែល output ជាប្រភេទគុណភាពឬ ជាប្រភេទក្រុមៗដូចជា ការសម្គាល់រូបភាពថាជាឆ្កែឬ ឆ្មា (ពីរប្រភេទ) ការសម្គាល់រូបភាពថាជាលេខណាមួយនៃសំណុំលេខ <span class="math inline">\({0,1,...,9}\)</span> ឬការព្យាករណ៍ថាមានភ្លៀងធ្លាក់ឬអត់នៅថ្ងៃស្អែកជាដើម។</p></li>
+<li><p><strong>តម្រែតម្រង់តម្លៃ (regression)</strong>: ជាប្រតិបត្តិការដែលតម្លៃ output ដែលត្រូវប៉ាន់ស្មានជាចំនួនពិត (<span class="math inline">\(y\in\mathbb{R}\)</span>) ដូចជា តម្លៃទីផ្សារ សីតុណ្ណភាពឬ តម្លៃជាបរិមាណផ្សេងៗទៀត។</p></li>
+<li><p><strong>ការធ្វើចំណែកថ្នាក់បែបមានការណែនាំ (supervised classification)</strong>: ជាប្រតិបត្តិការដែល output ជាប្រភេទគុណភាពឬ ជាប្រភេទក្រុមៗនៃវត្ថុដូចជា ការសម្គាល់រូបភាពថាជាសត្វឆ្កែឬ ឆ្មា (មាន២ជម្រើសសម្រាប់ output <span class="math inline">\(y\)</span>) ការសម្គាល់រូបភាពថាជាលេខណាមួយនៃសំណុំ <span class="math inline">\(\{0,1,...,9\}\)</span> ឬការព្យាករណ៍ថាមានភ្លៀងធ្លាក់ឬអត់នៅថ្ងៃស្អែកជាដើម។</p></li>
 </ul>
 </section>
 <section id="សកខមសនបបគមនករណន-unsupervised-learning" class="level3">
 <h3 class="anchored" data-anchor-id="សកខមសនបបគមនករណន-unsupervised-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបគ្មានការណែនាំ (Unsupervised learning)</h3>
-<p>ពាក្យថា <strong>គ្មានការណែនាំ (unsupervised)</strong> នៅទីនេះសម្តៅដល់អវត្តមាននៃ output <span class="math inline">\(y\)</span> ក្នុងប្រតិបត្តិការណ៍។ ក្នុងកិច្ចការប្រភេទនេះ ទិន្នន័យដែលប្រើប្រាស់មានតែ​ input <span class="math inline">\(x\)</span> ប៉ុណ្ណោះ ដោយគោលដៅនៃប្រតិបត្តិការណ៍គឺស្វែងយល់ពីទំនាក់ទំនងរវាងទិន្នន័យ ឬ ភាពស្រដៀងគ្នានៃទិន្នន័យឬ ការបម្លែងទិន្នន័យឲ្យមានភាពងាយស្រួលក្នុងការគណនាឬ ស្វែងយល់ជាងមុន។ ជារួមសិក្ខាម៉ាសុីនប្រភេទគ្មានការណែនាំមិនមានគោលដៅក្នុងការព្យាករណ៍តម្លៃ output ណាមួយនោះទេ តែយើងផ្តោតសំខាន់លើការស្វែងយល់ពីទ្រង់ទ្រាយនិង លក្ខណៈស្រដៀងគ្នានៃទិន្នន័យ ។ ឧទាហរណ៍៖</p>
+<p>ពាក្យថា <strong>គ្មានការណែនាំ (unsupervised)</strong> នៅទីនេះសម្តៅដល់អវត្តមាននៃ output <span class="math inline">\(y\)</span> ក្នុងប្រតិបត្តិការ។ ក្នុងកិច្ចការប្រភេទនេះ ទិន្នន័យដែលប្រើប្រាស់មានតែ​ input <span class="math inline">\(x\)</span> ប៉ុណ្ណោះ ដោយគោលដៅនៃប្រតិបត្តិការគឺស្វែងយល់ពីទំនាក់ទំនងរវាងទិន្នន័យ ភាពស្រដៀងគ្នានៃទិន្នន័យឬ ការបម្លែងទិន្នន័យឲ្យមានភាពងាយស្រួលក្នុងការគណនាជាងមុន។ ជារួម សិក្ខាម៉ាសុីនប្រភេទគ្មានការណែនាំមិនមានគោលដៅក្នុងការព្យាករណ៍តម្លៃ output ណាមួយនោះទេ តែយើងផ្តោតសំខាន់លើការស្វែងយល់ពីទ្រង់ទ្រាយនិង លក្ខណៈស្រដៀងគ្នានៃទិន្នន័យ ។ ឧទាហរណ៍៖</p>
 <ul>
 <li><p>យើងមានទិន្នន័យនៃអ្នកប្រើប្រាស់បណ្តាញសង្គមហើយយើងចង់ដាក់ពួកគាត់ជាក្រុមៗដែលអ្នកប្រើប្រាស់ដែលមានលក្ខណៈស្រដៀងគ្នាត្រូវស្ថិតក្នុងក្រុមជាមួយគ្នាដើម្បីងាយស្រួលគ្រប់គ្រងឬ ផ្សាយពាណិជ្ជកម្មជាដើម។</p></li>
 <li><p>ការធ្វើចំណែកថ្នាក់សៀវភៅនៅក្នុងបណ្ណាល័យ ការបែងចែករុក្ខជាតិឬ សត្វល្អិតទៅតាមលក្ខណៈរបស់វា។</p></li>
@@ -183,16 +183,16 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>ក្នុងឧទាហរណ៍ទី១និង ទី២ខាងលើ យើងចង់ដាក់ទិន្នន័យជាក្រុមៗអាស្រ័យនឹងលក្ខណៈស្រដៀងឬ ខុសគ្នានៃទិន្នន័យដែលគេហៅថា <strong>ការធ្វើបំណែងចែកជាក្រុមដោយគ្មានការណែនាំ (unsupervised classification ឬ clustering)</strong> ចំណែកឧទាហរណ៍ទី៣គឺការបន្ថយវិមាត្រនៃទិន្នន័យ ឬ ទំហំនៃការរក្សាទុកទិន្នន័យដើម្បីពន្លឿនការគណនាដែលគេហៅថា <strong>ការបន្ថយវិមាត្រនៃទិន្នន័យ (dimensional reduction)</strong> ។</p>
 </section>
-<section id="សកខមសនបបមនករលតដ-reinforcement-learning" class="level3">
-<h3 class="anchored" data-anchor-id="សកខមសនបបមនករលតដ-reinforcement-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបពង្រឹងឡើងវិញ (Reinforcement learning)</h3>
-<p>ជាផ្នែកមួយនៃសិក្ខាម៉ាសុីននិង ការគ្រប់គ្រោងចាត់ចែងប្រកបដោយប្រសិទ្ធភាព (optimal control) ដែលដំណើរការដោយ ភ្នាក់ងារ (agent) ឬ ម៉ូដែលគ្រឹះធ្វើសកម្មភាពក្នុងប្រតិបត្តិការណ៍មួយផ្តោតលើអតិបរមាកម្មនៃរង្វាន់ឬ ពិន្ទុសរុបដែលអាស្រ័យនឹងសកម្មភាពដែលបានធ្វើរបស់ភ្នាក់ងារក្នុងប្រតិបត្តិការណ៍នោះ។ ប្រតិបត្តិការណ៍ប្រភេទនេះមានភាពខុសគ្នាពីផ្នែកសិក្ខាម៉ាសុីនបែបមានការណែនាំដោយវាមិនត្រូវការ output <span class="math inline">\(y\)</span> ដើម្បីកំណត់រង្វាន់ឬ ពិន្ទុនោះទេ តែវាផ្តោតលើការធ្វើឲ្យមានតុល្យភាពរវាងសកម្មភាពដែលមិនទាន់បានធ្វើនៅឡើយនិង ការប្រើប្រាស់អ្វីដែលបានឆ្លងកាត់ហើយ។ វិធីសាស្រ្តប្រភេទនេះត្រូវបានប្រើប្រាស់ច្រើនក្នុងវិស្ស័យមនុស្សយន្ត ការដោះស្រាយល្បែងកំសាន្តផ្សេងៗដូចជា <a href="https://deepmind.google/technologies/alphago/">AlphaGO</a> និងជាពិសេសវាក៏ជាគន្លឹះដ៏សំខាន់នៃការបង្វឹកម៉ូដែលភាសាខ្នាតធំដ៏ល្បីល្បាញគឺ <a href="https://openai.com/gpt-4">ChatGPT4</a> ។</p>
+<section id="សកខមសនបបពងរងឡងវញ-reinforcement-learning" class="level3">
+<h3 class="anchored" data-anchor-id="សកខមសនបបពងរងឡងវញ-reinforcement-learning">🤓.🤓 សិក្ខាម៉ាសុីនបែបពង្រឹងឡើងវិញ (Reinforcement learning)</h3>
+<p>ជាផ្នែកមួយនៃសិក្ខាម៉ាសុីននិង ការគ្រប់គ្រោងចាត់ចែងប្រកបដោយប្រសិទ្ធភាព (optimal control) ដែលដំណើរការដោយ ភ្នាក់ងារ (agent) ឬ ម៉ូដែលគ្រឹះធ្វើសកម្មភាពក្នុងប្រតិបត្តិការណ៍មួយផ្តោតលើអតិបរមាកម្មនៃរង្វាន់ឬ ពិន្ទុសរុបដែលអាស្រ័យនឹងសកម្មភាពដែលបានធ្វើរបស់ភ្នាក់ងារក្នុងប្រតិបត្តិការណ៍នោះ។ ប្រតិបត្តិការណ៍ប្រភេទនេះមានភាពខុសគ្នាពីផ្នែកសិក្ខាម៉ាសុីនបែបមានការណែនាំដោយវាមិនត្រូវការ output ដើម្បីកំណត់រង្វាន់ឬ ពិន្ទុនោះទេ តែវាផ្តោតលើការធ្វើឲ្យមានតុល្យភាពរវាងសកម្មភាពដែលមិនទាន់បានធ្វើនៅឡើយនិង ការប្រើប្រាស់អ្វីដែលបានឆ្លងកាត់ហើយ។ វិធីសាស្រ្តប្រភេទនេះត្រូវបានប្រើប្រាស់ក្នុងវិស្ស័យមនុស្សយន្ត ការដោះស្រាយល្បែងកំសាន្តផ្សេងៗដូចជា <a href="https://deepmind.google/technologies/alphago/">AlphaGO</a> និងជាពិសេសវាក៏ជាគន្លឹះដ៏សំខាន់នៃការបង្វឹកម៉ូដែលភាសាខ្នាតធំដ៏ល្បីល្បាញគឺ <a href="https://openai.com/gpt-4">ChatGPT4</a> ។</p>
 </section>
 </section>
 <section id="ឯកសរសមរបសវងយលបនថម" class="level2">
 <h2 class="anchored" data-anchor-id="ឯកសរសមរបសវងយលបនថម">📚 ឯកសារសម្រាប់ស្វែងយល់បន្ថែម</h2>
 <p>សៀវភៅខាងក្រោមជាឯកសារជំនួយដ៏ល្អសម្រាប់អ្នកចង់ស្វែងយល់កាន់តែសុីជម្រៅលើសិក្ខាម៉ាសុីនចាប់ពីមូលដ្ឋានគ្រឹះទៅដល់ការអនុវត្តនិង ការសរសេរកូដក្នុងកម្មវិធីមួយចំនួនដូចជា Python និង R ផងដែរ។</p>
-<p><a href="https://www.statlearning.com/"><img src="./figures/intro-SL.jpg" class="img-fluid" style="width:22.5%" alt="មូលដ្ខានគ្រឹះ"></a> <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://hastie.su.domains/Papers/ESLII.pdf"><img src="./figures/ELSL.jpg" class="img-fluid" style="width:23.2%" alt="មូលដ្ខានគ្រឹះ"></a> <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf"><img src="./figures/patternRecg.jpg" class="img-fluid" style="width:21.0%" alt="មូលដ្ខានគ្រឹះនិង ទ្រឹស្តី"></a> <a href="https://www.deeplearningbook.org/"><img src="./figures/deep_learning.jpg" class="img-fluid" style="width:22.5%" alt="ផ្តោតលើ Deep learning"></a></p>
-<p><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.nrigroupindia.com/e-book/Introduction%20to%20Machine%20Learning%20with%20Python%20(%20PDFDrive.com%20)-min.pdf"><img src="./figures/intro_ml.png" class="img-fluid" style="width:23.0%" alt="មូលដ្ខានគ្រឹះនិងកូដក្នុង python"></a> <a href="https://link.springer.com/book/10.1007/978-981-33-6108-9"><img src="./figures/deep_learning_and_physics.png" class="img-fluid" style="width:23.0%" alt="Deep learning ធៀបនិង រូបវិទ្យា"></a> <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://powerunit-ju.com/wp-content/uploads/2021/04/Aurelien-Geron-Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow_-Concepts-Tools-and-Techniques-to-Build-Intelligent-Systems-OReilly-Media-2019.pdf"><img src="./figures/hands_on_ML.png" class="img-fluid" style="width:21.0%" alt="អនុវត្តនិង កូដ"></a> <a href="https://themlbook.com/"><img src="./figures/100page.png" class="img-fluid" style="width:22.0%" alt="មូលដ្ខាននិង អធិប្បាយ"></a></p>
+<p><a href="https://www.statlearning.com/"><img src="./figures/intro-SL.jpg" class="img-fluid" style="width:22.5%" alt="មូលដ្ខានគ្រឹះ"></a> <a href="https://hastie.su.domains/Papers/ESLII.pdf"><img src="./figures/ELSL.jpg" class="img-fluid" style="width:23.2%" alt="មូលដ្ខានគ្រឹះ"></a> <a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf"><img src="./figures/patternRecg.jpg" class="img-fluid" style="width:21.0%" alt="មូលដ្ខានគ្រឹះនិង ទ្រឹស្តី"></a> <a href="https://www.deeplearningbook.org/"><img src="./figures/deep_learning.jpg" class="img-fluid" style="width:22.5%" alt="ផ្តោតលើ Deep learning"></a></p>
+<p><a href="https://www.nrigroupindia.com/e-book/Introduction%20to%20Machine%20Learning%20with%20Python%20(%20PDFDrive.com%20)-min.pdf"><img src="./figures/intro_ml.png" class="img-fluid" style="width:23.0%" alt="មូលដ្ខានគ្រឹះនិងកូដក្នុង python"></a> <a href="https://link.springer.com/book/10.1007/978-981-33-6108-9"><img src="./figures/deep_learning_and_physics.png" class="img-fluid" style="width:23.0%" alt="Deep learning ធៀបនិង រូបវិទ្យា"></a> <a href="https://powerunit-ju.com/wp-content/uploads/2021/04/Aurelien-Geron-Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow_-Concepts-Tools-and-Techniques-to-Build-Intelligent-Systems-OReilly-Media-2019.pdf"><img src="./figures/hands_on_ML.png" class="img-fluid" style="width:21.0%" alt="អនុវត្តនិង កូដ"></a> <a href="https://themlbook.com/"><img src="./figures/100page.png" class="img-fluid" style="width:22.0%" alt="មូលដ្ខាននិង អធិប្បាយ"></a></p>
 </section>
 
 </main>
