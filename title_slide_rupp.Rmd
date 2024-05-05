@@ -1,0 +1,23 @@
+background-image: url('./img/bg_bd2.jpg')
+background-size: cover
+
+class: top, center, title-slide
+
+<img src="img/X.png" align="middle" height="110" width="100"> .white[........] 
+<img src="img/logo_lmd.png" align="right" height="90">
+<img src="img/logo_ens-remove.png" align="left" height="90">
+
+<br><hbr>
+
+<hr class="L1"> <hbr>
+
+## `r params$title`
+
+<hr class="L2">
+
+#### `r params$subtitle`
+
+<img src="img/RUPP_logo.png" align="middle" height="80"> <hbr>
+
+### Sothea .textsc[Has], PhD
+
